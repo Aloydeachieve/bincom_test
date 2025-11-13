@@ -3,8 +3,8 @@
 @if ($lastSubmission)
 <div class="alert alert-info mt-3">
     <strong>Last Submission:</strong> 
-    Entered by <b>{{ $latestSubmission->entered_by_user }}</b> 
-    on <b>{{ \Carbon\Carbon::parse($latestSubmission->date_entered)->format('d M Y, h:i A') }}</b>
+    Entered by <b>{{ $lastSubmission->entered_by_user }}</b> 
+    on <b>{{ \Carbon\Carbon::parse($lastSubmission->date_entered)->format('d M Y, h:i A') }}</b>
 </div>
 @endif
 
